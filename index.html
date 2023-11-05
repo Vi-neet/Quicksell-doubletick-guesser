@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="body.css">
+    
 </head>
 <body>
-
-    <h1>Number guessing game</h1>
-    <div class="container">
-        <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
-
-        <div class="form">
-        <label for="guessField">Enter a guess: </label>
-        <input type="number" min="1" max="100" required id="guessField" class="guessField">
-        <button value="Submit guess" class="guessSubmit">Submit </button>
+    <header>
+        <img class="quicksellImg" src="assets/powered_by.png">
+        <img class="doubletickImg" src="assets/logo.cf5eb260.png">
+    </header>
+    <div class="main">
+        <div class="head-container">
+            <p class="heading">QuickSell-DoubleTick Number Game</p>
         </div>
+        <div class="container">
+            <p class="content">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
 
-        <div class="resultParas">
-        <p class="guesses"></p>
-        <p class="lastResult"></p>
-        <p class="lowOrHi"></p>
+            <div class="form">
+            <label for="guessField" class="labelText">Enter a guess: </label>
+            <input type="number" min="1" max="100" required id="guessField" class="guessField">
+            <button value="Submit guess" class="guessSubmit">Submit </button>
+            </div>
+
+            <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+            </div>
+        </div>
+        <div class="reset-container">
         </div>
     </div>
     <script src="index.js"></script>
