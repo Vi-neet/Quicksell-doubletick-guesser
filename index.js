@@ -16,6 +16,7 @@ function checkGuess() {
   if (userGuess < 1 || userGuess > 100) {
     const errorMessage = document.querySelector('.error-message');
     errorMessage.style.display = 'block';
+    console.error('Please enter a number between 1 and 100.');
     return;
   }
   if (guessCount === 1) {
