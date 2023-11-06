@@ -9,6 +9,11 @@ let resetButton;
 
 function checkGuess() {
   const userGuess = Number(guessField.value);
+  if (userGuess < 1 || userGuess > 100) {
+    alert('Please enter a number between 1 and 100.');
+    return; 
+  }
+
   if (guessCount === 1) {
     guesses.textContent = 'Previous guesses: ';
   }
