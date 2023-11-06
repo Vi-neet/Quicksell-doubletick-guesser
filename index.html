@@ -8,32 +8,32 @@
     
 </head>
 <body>
-    <header>
+    <nav>
         <img class="quicksellImg" src="assets/powered_by.png">
         <img class="doubletickImg" src="assets/logo.cf5eb260.png">
-    </header>
-    <div class="main">
-        <div class="head-container">
-            <p class="heading">QuickSell-DoubleTick Number Game</p>
-        </div>
-        <div class="container">
-            <p class="content">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+    </nav>
+        <main class="main">
+            <section class="head-container">
+                <p class="heading">QuickSell-DoubleTick Number Game</p>
+            </section>
+            <section class="container">
+                <p class="content">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
 
-            <div class="form">
-            <label for="guessField" class="labelText">Enter a guess: </label>
-            <input type="number" min="1" max="100" required id="guessField" class="guessField">
-            <button value="Submit guess" class="guessSubmit">Submit </button>
-            </div>
+                <div class="form">
+                <label for="guessField" class="labelText">Enter a guess: </label>
+                <input type="number" min="1" max="100" required id="guessField" class="guessField">
+                <button value="Submit guess" class="guessSubmit">Submit </button>
+                </div>
 
-            <div class="resultParas">
-            <p class="guesses"></p>
-            <p class="lastResult"></p>
-            <p class="lowOrHi"></p>
+                <div class="resultParas">
+                <p class="guesses"></p>
+                <p class="lastResult"></p>
+                <p class="lowOrHi"></p>
+                </div>
+            </section>
+            <div class="reset-container">
             </div>
-        </div>
-        <div class="reset-container">
-        </div>
-    </div>
+        </main>
     <script src="index.js"></script>
 </body>
 </html>

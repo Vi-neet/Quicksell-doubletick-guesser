@@ -5,20 +5,22 @@ html {
   }
 
   body {
-    width: 50%;
+    width: 100%;
     max-width: 800px;
-    min-width: 480px;
-    margin: 0 auto;
-
+    min-width: 480px; 
+    margin: 0% auto;
+    padding: 0%;
+    background: linear-gradient(to bottom, #f0f0f0, #a8e0c9);
   }
   .form input[type="number"] {
-    width: 200px;
+    width: 100px;
   }
 
   .lastResult {
     color: white;
     padding: 3px;
   }
+
  .container{
     box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
     padding: 10px 15px 10px 15px;
@@ -27,9 +29,8 @@ html {
     min-width: 350px;
     max-width: 800px; 
     text-align: center; 
-    padding: 20px;
-    background-color: #f0f0f0; 
-    border: 2px solid #333; 
+    padding: 20px 30px;
+    background-color: #ffffff; 
     margin: 20px; 
 } 
 .main{
@@ -64,6 +65,7 @@ html {
     border-width: 3px;
     border-radius: 5px;
     border-style: solid;
+
 }
 
 .resetButton{
@@ -99,7 +101,7 @@ html {
   font-weight: 1000;
   font-size: 36px;
 }
-header{
+nav{
   display: flex;
   justify-content:space-between;
 
@@ -121,4 +123,12 @@ header{
   position: relative;
   right:-120px;
   top:20px;
+}
+
+.guesses{
+  font-weight: bold;
+}
+
+.lowOrHi{
+  font-weight: bold;
 }
